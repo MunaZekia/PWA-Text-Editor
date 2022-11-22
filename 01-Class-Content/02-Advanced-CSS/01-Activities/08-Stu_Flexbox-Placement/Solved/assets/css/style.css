@@ -20,8 +20,9 @@ header {
 
 nav {
   display: flex;
-  background-color: #d8a47f;
+  /* Align the child elements to the right side of the parent */
   justify-content: flex-end;
+  background-color: #d8a47f;
 }
 
 nav a {
@@ -41,6 +42,8 @@ footer {
 
 .product {
   display: flex;
+  /* Align the child elements to the top of the parent */
+  align-items: flex-start;
   width: 90%;
   margin: 1% auto;
 }
@@ -51,6 +54,7 @@ footer {
 
 .product-slideshow {
   display: flex;
+  /* Align the child elements to the center of the parent */
   align-items: center;
 }
 

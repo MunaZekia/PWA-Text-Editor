@@ -60,7 +60,7 @@ footer {
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
 /* Tablets - header changes color */
-@media screen and (max-width: 992px) {
+@media screen and(min-width: 992px) {
   header {
     background: #772014;
   }
