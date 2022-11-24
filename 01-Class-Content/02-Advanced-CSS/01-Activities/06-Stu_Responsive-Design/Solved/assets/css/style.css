@@ -15,10 +15,8 @@ header {
 }
 
 /* 
-What happens when we set the display property to flex? 
-TODO: Write your answer here 
-
-one dimentsional layout model
+What happens when we set the display property to flex?
+The flex container becomes flexible 
 */
 nav {
   display: flex;
@@ -33,8 +31,8 @@ nav a {
 }
 
 /* 
-What is the flex-wrap property? they are forced onto one line or wrap onto multiple loine
-TODO: Write your answer here 
+What is the flex-wrap property?
+It specifies whether the flex items should wrap or not 
 */
 main {
   display: flex;
@@ -56,8 +54,8 @@ footer {
 }
 
 /* 
-What does the justify-content property do? 
-TODO: Write your answer here 
+What does the justify-content property do?
+It is used to align the flex items; in our case, the product cards 
 */
 .products {
   flex: 4;
@@ -65,13 +63,14 @@ TODO: Write your answer here
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
 
 /* 
 What is the flex property a shorthand property for?
-What is it doing here? 
-TODO: Write your answer here 
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
 */
 .card {
   border-style: solid;
@@ -95,8 +94,9 @@ TODO: Write your answer here
 
 /* 
 What does the flex-direction property define?
+It defines in which direction the container wants to stack the flex items
 What is it doing here? 
-TODO: Write your answer here The row and coloum. row is horzotal cplumbia: center vertial 
+We are telling the main body and navbar to stack vertically in a column
 */
 @media screen and (max-width: 768px) {
   main,

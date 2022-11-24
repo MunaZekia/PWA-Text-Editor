@@ -57,7 +57,7 @@ footer {
 
 /* We can use rotate to rotate the photo to the left or right */
 .rotate {
-  transform: rotate(7deg);
+  transform: rotate(90deg);
 }
 
 /* We can use scale to stretch the photo vertically or horizontally */

@@ -9,7 +9,7 @@ body {
 
 .products {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* Centers along the main axis determined by flex-direction */
   justify-content: center;
   /* Centers along the opposite axis */

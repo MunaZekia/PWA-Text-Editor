@@ -30,35 +30,28 @@ header {
   text-align: center;
 }
 
-
-@media screen and (max-width: 992px) 
 .card img {
   width: 100%;
 }
 
-
-.card (
-  width: 50%;
-) 
-@media screen and (max-width: 768px) {
-  .card (
-    width: 100%;
-  )
-}
-
-
-
-
-
-/* TODO: Use media query to change the width of the cards so they split into two columns at 992px or smaller*/
+/* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
   .card {
     width: 50%;
   }
+  /* Change the header color */
+  header {
+    background: #772014;
+  }
 }
-/* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+
+/* Cards are stacked on top of each other at 768px or smaller */
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+  /* Change the header color */
+  header {
+    background: #8ac4ff;
   }
 }

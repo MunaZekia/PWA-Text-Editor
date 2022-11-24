@@ -5,6 +5,10 @@
 body {
   font-family: Arial;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
 header {
@@ -14,12 +18,6 @@ header {
   color: #fff;
 }
 
-/* 
-What happens when we set the display property to flex? 
-TODO: Write your answer here 
-
-one dimentsional layout model
-*/
 nav {
   display: flex;
   background-color: #d8a47f;
@@ -32,56 +30,54 @@ nav a {
   text-align: center;
 }
 
-/* 
-What is the flex-wrap property? they are forced onto one line or wrap onto multiple loine
-TODO: Write your answer here 
-*/
 main {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 aside {
   flex: 1;
   background-color: #b9c6ae;
   padding: 80px;
-  text-align: center;
+  text-align: left;
 }
 
 footer {
+  width: 100%;
+  bottom: 0;
   padding: 20px;
   text-align: center;
   background: #13293d;
   color: #fff;
+  margin-top: auto;
 }
 
-/* 
-What does the justify-content property do? 
-TODO: Write your answer here 
-*/
 .products {
   flex: 4;
   background-color: #fff;
-  padding: 20px;
+  padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-/* 
-What is the flex property a shorthand property for?
-What is it doing here? 
-TODO: Write your answer here 
-*/
+/* Added rotation, box-shadow, border-radius */
 .card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 10px;
-  flex: 0 0 400px;
+  flex: 0 0 300px;
+  transform: rotate(8deg);
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: 20px;
 }
 
+/* Added border-radius to match the card */
 .card header {
+  border-radius: 50px 50px 0px 0px;
   padding: 20px;
 }
 
@@ -93,11 +89,6 @@ TODO: Write your answer here
   width: 100%;
 }
 
-/* 
-What does the flex-direction property define?
-What is it doing here? 
-TODO: Write your answer here The row and coloum. row is horzotal cplumbia: center vertial 
-*/
 @media screen and (max-width: 768px) {
   main,
   nav {
