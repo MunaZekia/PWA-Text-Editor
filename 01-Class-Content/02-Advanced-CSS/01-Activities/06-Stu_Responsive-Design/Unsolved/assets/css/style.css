@@ -17,6 +17,8 @@ header {
 /* 
 What happens when we set the display property to flex? 
 TODO: Write your answer here 
+
+one dimentsional layout model
 */
 nav {
   display: flex;
@@ -31,7 +33,7 @@ nav a {
 }
 
 /* 
-What is the flex-wrap property? 
+What is the flex-wrap property? they are forced onto one line or wrap onto multiple loine
 TODO: Write your answer here 
 */
 main {
@@ -95,7 +97,7 @@ TODO: Write your answer here
 /* 
 What does the flex-direction property define?
 What is it doing here? 
-TODO: Write your answer here 
+TODO: Write your answer here The row and coloum. row is horzotal cplumbia: center vertial 
 */
 @media screen and (max-width: 768px) {
   main,

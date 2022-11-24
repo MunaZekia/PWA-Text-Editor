@@ -5,6 +5,7 @@ header {
 
 h2 {
   text-align: left;
+  display: inline-block;
 }
 
 ul {
@@ -12,33 +13,25 @@ ul {
   color: #ffffff;
 }
 
-/* List items in navigation bar */
+
 li {
-  /* TODO: Add your code here */
-  list-style-type: none;
-  font-size: 40px;
+  display: inline;
+  list-style-type: none
 }
 
-/* Boxes */
-img {
-  /* TODO: Add your code here */
-  margin: 0 auto;
-}
+
 
 #item-1 {
-  background-color: #e0115f;
+  background-color: #;
+  width: 120px;
 }
 
 #item-2 {
-  background-color: #0000ff;
+  background-color: #0000ff
+  
 }
 
 #item-3 {
   background-color: #999900;
 }
 
-/* Box 3 */
-#image-3 {
-  /* TODO: Add your code here */
-  display: none;
-}

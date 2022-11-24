@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  border-radius: 2px;
+  transform: rotate(7);
+  filter: drop-shadow(10px, 5px, 5px pink) 
+  
 }
 
 body {
@@ -70,6 +74,11 @@ footer {
   padding: 10px;
   margin: 20px;
   flex: 0 0 300px;
+  filter: drop-shadow(10px, 5px, 5px teal)
+}
+
+.card {
+
 }
 
 .card header {
@@ -82,7 +91,14 @@ footer {
 
 .card img {
   width: 100%;
+  border-radius: 90px;
+
+  
+
 }
+
+
+
 
 @media screen and (max-width: 768px) {
   main,
