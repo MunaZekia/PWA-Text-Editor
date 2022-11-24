@@ -2,6 +2,9 @@
 body {
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
+  font-size: 16px;
+  list-style-position: inside;
 }
 
 header {
@@ -15,6 +18,13 @@ header {
 
 /* TODO: Change the heading size to 200%, give it a margin all around, and assign font family to serif */
 h1 {
+  font-size: 16px;
+  list-style-position:inside;
+  font-family: serif; 
+  font-family: monospace;
+  margin:2.5px;
+  
+
 }
 
 /* TODO: Change the heading size to be slightly smaller than h1, give it a margin only on the top and bottom, and assign font family to serif */
@@ -59,6 +69,9 @@ article p {
 
 /* TODO: Add a margin to indent the list, give it square bullet points, and assign font family to monospace */
 article ul {
+  font-family: monospace;
+  margin-left: 5%;
+  list-style: square;
 }
 
 aside {
