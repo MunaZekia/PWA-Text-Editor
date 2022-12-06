@@ -20,7 +20,14 @@ Refer to the documentation:
 
 It is best practice to add a link to an external JavaScript file above what closing HTML tag? 
 
+
+
+ANSWER--> The best practice is to put JavaScript <script> tags just before the closing </body> tag rather than in the <head> section of your HTML.-->
+
 ## 🏆 Bonus
+
+
+
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
