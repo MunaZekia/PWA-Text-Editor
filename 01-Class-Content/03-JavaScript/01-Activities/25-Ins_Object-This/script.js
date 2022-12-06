@@ -1,5 +1,5 @@
 // The default keyword "this" refers to the global object
-// In a browser, the global object is the Window 
+// In a browser, the global object is the Window
 
 // Logs Window
 console.log(this);
@@ -11,21 +11,41 @@ var planet = {
   isPopulated: true,
   population: "7.594 billion",
   logFacts: function () {
-     //Logs "This planet's name is Earth"
-     console.log("This planet's name is " + this.name);
-     //Logs "This planet's age is 4.543 billion years"
-	 console.log("This planet's age is " + this.age);
+    //Logs "This planet's name is Earth"
+    console.log("This planet's name is " + this.name);
+    //Logs "This planet's age is 4.543 billion years"
+    console.log("This planet's age is " + this.age);
   },
   logPopulation: function () {
     if (this.isPopulated) {
       // Logs "This planet's population is 7.594 billion"
-	  console.log("This planet's population is " + this.population);
-	} else {
-	  console.log("The planet is unpopulated");
-	}   
-  }
+      console.log("This planet's population is " + this.population);
+    } else {
+      console.log("The planet is unpopulated");
+    }
+  },
+};
+
+var planet2 = {
+  name: "Mars",
+  age: "4.543 billion years",
+  isPopulated: false,
+  population: "0",
+  logFacts: function () {
+    console.log("This planet's name is " + this.name);
+    console.log("This planet's age is " + this.age);
+  },
+  logPopulation: function () {
+    if (this.isPopulated) {
+      console.log("This planet's population is " + this.population);
+    } else {
+      console.log("The planet is unpopulated");
+    }
+  },
 };
 
 // Calls object methods
 planet.logFacts();
 planet.logPopulation();
+planet2.logFacts();
+planet2.logPopulation();
