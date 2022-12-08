@@ -1,12 +1,11 @@
-// TODO: What will the following line of code log?
+// global window
 console.log(window);
 
-// TODO: What will the following line of code log?
+// the whole html
 console.log(window.document);
 
-// TODO: What will the following line of code log?
+// root element of the html disregard the doc type
 console.log(document.documentElement);
 
-// TODO: What will the following line of code log?
+// head element of the document
 console.log(document.head);
-

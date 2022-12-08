@@ -8,11 +8,20 @@ var favoriteEl = document.createElement("div");
 // Create ordered list element
 var listEl = document.createElement("ol");
 // Create ordered list items
+var li1 = document.createElement("li");
+var li2 = document.createElement("li");
+var li3 = document.createElement("li");
+var li4 = document.createElement("li");
 
 h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
 nameEl.textContent = "His name is Jax.";
 favoriteEl.textContent = "My favorite foods are:";
+// Add text for list items
+li1.textContent = "Apples 🍎 ";
+li2.textContent = "Pizza 🍕 ";
+li3.textContent = "Dumplings 🥟 ";
+li4.textContent = "Cupcakes 🧁 ";
 
 body.appendChild(h1El);
 body.appendChild(infoEl);
@@ -21,8 +30,13 @@ infoEl.appendChild(kittenEl);
 infoEl.appendChild(nameEl);
 body.appendChild(favoriteEl);
 favoriteEl.appendChild(listEl);
-// Append ordered list
+// Append ordered list 
 favoriteEl.appendChild(listEl);
+// Append list items to ordered list element 
+listEl.appendChild(li1);
+listEl.appendChild(li2);
+listEl.appendChild(li3);
+listEl.appendChild(li4);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
@@ -30,31 +44,10 @@ imgEl.setAttribute("src", "http://placekitten.com/200/300");
 nameEl.setAttribute("style", "font-size:25px; text-align:center;");
 kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
-
-// TODO: Add ordered list items containing four favorite foods
-var foods = [
-  "Apples 🍎 ",
-  "Pizza 🍕 ",
-  "Dumplings 🥟 ",
-  "Cupcakes 🧁 ",
-  "Pie ",
-  "Canollis",
-];
+// Add styling to list element
 listEl.setAttribute("style", "background:#333333; padding:20px;");
-for (var i = 0; i < foods.length; i++) {
-  var foodLi = document.createElement("li");
-  foodLi.textContent = foods[i];
-  listEl.appendChild(foodLi);
-  var color = i + 1;
-  foodLi.setAttribute(
-    "style",
-    " color:white; background: #" +
-      color +
-      color +
-      color +
-      color +
-      color +
-      color +
-      "; padding: 5px; margin-left: 35px;"
-  );
-}
+// Add styling to list items
+li1.setAttribute("style", " color:white; background: #666666; padding: 5px; margin-left: 35px;");
+li2.setAttribute("style", " color:white; background: #777777; padding: 5px; margin-left: 35px;");
+li3.setAttribute("style", " color:white; background: #888888; padding: 5px; margin-left: 35px;");
+li4.setAttribute("style", " color:white; background: #999999; padding: 5px; margin-left: 35px;");
