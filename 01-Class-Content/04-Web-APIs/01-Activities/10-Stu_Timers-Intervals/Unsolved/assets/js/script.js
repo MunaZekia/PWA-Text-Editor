@@ -21,7 +21,7 @@ function countdown() {
   }, 1000);
 }
 
-// Displays the message one word at a time
+// Displays the message one word at a time/Applications/Publisher Rocket.app/Contents/Resources/app.asar/dist/electron/imgs/logo-01--assets.png
 function displayMessage() {
   var wordCount = 0;
 
