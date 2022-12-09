@@ -8,5 +8,14 @@ function setCounterText() {
 }
 
 // TODO: Add event listener to increment button
-
-// TODO: Add event listener to decrement button 
+incrementEl.addEventListener("mouseenter", function () {
+  count++;
+  setCounterText();
+});
+// TODO: Add event listener to decrement button
+decrementEl.addEventListener("mouseenter", function () {
+  if (count > 0) {
+    count--;
+    setCounterText();
+  }
+});
