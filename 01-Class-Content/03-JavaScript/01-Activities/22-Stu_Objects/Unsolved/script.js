@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-
-  var customerOrder= {
-    // Properties are made up of key-value pairs
-    name: "Coffee",
-     Sugar: 4,
-    status: true,
-  }
-console.log(customerOrder.name);
-console.log(customerOrder.Sugar);
-
-if(customerOrder.Isready)(
-console.log('ready for pick-up')
-)
-
-=======
 //WRITE YOUR CODE BELOW
 var customerOrder = {
   name: "beer",
@@ -44,4 +28,3 @@ if (customerOrder.isReady) {
 for (let key in customerOrder) {
   console.log(key + ": " + customerOrder[key]);
 }
->>>>>>> bb621db58849168fe54ae2a476167f50edfffd37

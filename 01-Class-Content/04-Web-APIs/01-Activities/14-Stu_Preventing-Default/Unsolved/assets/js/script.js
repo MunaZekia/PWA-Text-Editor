@@ -19,5 +19,16 @@ function addTip(event) {
   document.querySelector("#tip-amount").textContent = tipAmount;
   document.querySelector("#new-total").textContent = newTotal.toFixed(2);
 }
+ 
 
-submitEl.addEventListener("click", addTip);
+  submitEl.addEventListener("click", addTip);
+
+  
+
+
+  
+ 
+
+
+
+ 

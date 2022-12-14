@@ -16,16 +16,21 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  color: #00a8e8;
+.h6 {
+  color: white;
+  font: 25px;
 }
+/* changed the color from blue to white*/
+
 
 article {
   margin: 20px auto;
   padding: 20px;
   border: 3px solid #00a8e8;
   overflow: auto;
+  font-size: 40px;
 }
+/* change the font to 40px */
 
 #header {
   margin: 0 auto 50px auto;
@@ -40,13 +45,15 @@ article {
 #articles {
   max-width: 80%;
   margin: 0 auto;
+
 }
 
 .art-title {
   text-decoration: underline #003459;
   margin-bottom: 15px;
+  color: #00a8e8;
 }
-
+/* added the color blue*/
 .fashion {
   height: 200px;
   width: 400px;

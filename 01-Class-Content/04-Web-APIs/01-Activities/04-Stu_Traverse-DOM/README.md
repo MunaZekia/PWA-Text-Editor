@@ -28,6 +28,8 @@ The following image demonstrates the web application's appearance and functional
 
 How would you use parent-child relationships to access the elements you want to style? 
 
+/*.document.getElementById(id)/*
+
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
