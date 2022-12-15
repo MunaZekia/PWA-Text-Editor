@@ -8,10 +8,6 @@ var favoriteEl = document.createElement("div");
 // Create ordered list element
 var listEl = document.createElement("ol");
 // Create ordered list items
-var li1 = document.createElement("li");
-var li2 = document.createElement("li");
-var li3 = document.createElement("li");
-var li4 = document.createElement("li");
 
 h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
@@ -25,7 +21,7 @@ infoEl.appendChild(kittenEl);
 infoEl.appendChild(nameEl);
 body.appendChild(favoriteEl);
 favoriteEl.appendChild(listEl);
-// Append ordered list 
+// Append ordered list
 favoriteEl.appendChild(listEl);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
@@ -36,3 +32,29 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+var foods = [
+  "Apples 🍎 ",
+  "Pizza 🍕 ",
+  "Dumplings 🥟 ",
+  "Cupcakes 🧁 ",
+  "Pie ",
+  "Canollis",
+];
+listEl.setAttribute("style", "background:#333333; padding:20px;");
+for (var i = 0; i < foods.length; i++) {
+  var foodLi = document.createElement("li");
+  foodLi.textContent = foods[i];
+  listEl.appendChild(foodLi);
+  var color = i + 1;
+  foodLi.setAttribute(
+    "style",
+    " color:white; background: #" +
+      color +
+      color +
+      color +
+      color +
+      color +
+      color +
+      "; padding: 5px; margin-left: 35px;"
+  );
+}
