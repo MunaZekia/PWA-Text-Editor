@@ -1,12 +1,12 @@
-var requestUrl = 'https://api.github.com/orgs/Netflix/repos';
+var requestUrl = "https://api.github.com/orgs/Netflix/repos";
 
 // JQuery AJAX
 // TODO: Comment on how AJAX returns an API call
 $.ajax({
   url: requestUrl,
-  method: 'GET',
+  method: "GET",
 }).then(function (response) {
-  console.log('AJAX Response \n-------------');
+  console.log("AJAX Response \n-------------");
   console.log(response);
 });
 
@@ -17,7 +17,7 @@ fetch(requestUrl)
     return response.json();
   })
   .then(function (data) {
-    console.log('Fetch Response \n-------------');
+    console.log("Fetch Response \n-------------");
     console.log(data);
   });
 
@@ -26,11 +26,11 @@ fetch(requestUrl)
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
   if (xhr.readyState === XMLHttpRequest.DONE) {
-    console.log('XMLHttpRequest Response \n-------------');
+    console.log("XMLHttpRequest Response \n-------------");
     console.log(xhr.response);
   }
 };
-xhr.open('GET', requestUrl);
+xhr.open("GET", requestUrl);
 xhr.send();
 
 // TODO: Comment on the differences on the format of the data that was returned

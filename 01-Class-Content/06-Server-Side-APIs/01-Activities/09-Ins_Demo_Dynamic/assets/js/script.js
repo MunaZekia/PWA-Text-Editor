@@ -1,9 +1,9 @@
-var issueContainer = document.getElementById('issues');
-var fetchButton = document.getElementById('fetch-button');
+var issueContainer = document.getElementById("issues");
+var fetchButton = document.getElementById("fetch-button");
 
 function getApi() {
-  var requestUrl = 'https://api.github.com/repos/IBM/clai/issues?per_page=5';
-
+  var requestUrl =
+    "https://api.github.com/repos/twitter/chill/issues?per_page=5";
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
@@ -11,8 +11,8 @@ function getApi() {
     .then(function (data) {
       console.log(data);
       for (var i = 0; i < data.length; i++) {
-        var userName = document.createElement('h3');
-        var issueTitle = document.createElement('p');
+        var userName = document.createElement("h3");
+        var issueTitle = document.createElement("p");
         userName.textContent = data[i].user.login;
         issueTitle.textContent = data[i].title;
         issueContainer.append(userName);
@@ -20,4 +20,4 @@ function getApi() {
       }
     });
 }
-fetchButton.addEventListener('click', getApi);
+fetchButton.addEventListener("click", getApi);
