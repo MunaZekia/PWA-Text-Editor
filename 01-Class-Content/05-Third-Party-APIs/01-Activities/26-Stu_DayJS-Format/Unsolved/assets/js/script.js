@@ -1,7 +1,7 @@
 // Use Day.js to format the date and assign to the declared variable.
-
+var today = dayjs('');
 // TODO: 1. What is your graduation date in the following format: Jan 1, 1999?
-var gradDate = dayjs('2022-08-01').format('MMM D, YYYY');
+var gradDate = dayjs('2022-05-15').format('MMM D, YYYY');
 $('#1a').text(gradDate);
 
 // TODO: 2. What day of the week will 1/1/2027 be? (e.g. Is it "Monday"?)

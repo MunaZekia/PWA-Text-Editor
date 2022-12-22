@@ -63,6 +63,17 @@ $(function () {
     changeYear: true,
   });
 });
+$(function() {
+$( '#skills-list').sortable({
+  placeholder: "ui-state-highlight"
+});
+    
+  })
+  $( "Skills-Lists" ).draggable({
+    connectToSortable: "#sortable",
+    helper: "clone",
+    revert: "invalid"
+  });
+  $("ul, li").disableSelection();
 
-// Add interaction here
 //

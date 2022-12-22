@@ -12,12 +12,11 @@
 }
 
 .custom-navbar {
-  font-family: "Pacifico", cursive;
-  font-size: 100px;
   background-color: var(--teal);
 }
 
 .custom-navbar a {
+  font-size: 1.5rem;
   color: var(--lightteal);
 }
 

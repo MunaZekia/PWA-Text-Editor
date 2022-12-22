@@ -122,3 +122,4 @@ displayTime();
 setInterval(displayTime, 1000);
 
 printProjectData();
+
