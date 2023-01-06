@@ -21,11 +21,16 @@ var formSubmitHandler = function (event) {
 
 var buttonClickHandler = function (event) {
   // What is `event.target` referencing?
+  
+  // record the data language from the button and get the attritute wherever we click
+
   // TODO: Write your answer here
   var language = event.target.getAttribute('data-language');
 
   // Why is this `if` block in place?
+
   // TODO: Write your answer here
+  
   if (language) {
     getFeaturedRepos(language);
 
@@ -72,7 +77,9 @@ var getFeaturedRepos = function (language) {
 var displayRepos = function (repos, searchTerm) {
   if (repos.length === 0) {
     repoContainerEl.textContent = 'No repositories found.';
-    // What would happen if there was no `return;` here?
+    // What would happen if there was no `return;` here?]
+
+    gives no return a vaule from a method
     // TODO: Write your answer here
     return;
   }
@@ -81,7 +88,9 @@ var displayRepos = function (repos, searchTerm) {
 
   for (var i = 0; i < repos.length; i++) {
     // What is the result of this string concatenation?
+    append oen dtring to an end of another string
     // TODO: Write your answer here
+    
     var repoName = repos[i].owner.login + '/' + repos[i].name;
 
     var repoEl = document.createElement('div');

@@ -4,8 +4,11 @@ var limitWarningEl = document.querySelector('#limit-warning');
 
 var getRepoName = function () {
   // Where is this value coming from?
+    //it get the search paremeter from the URL and the serach shows the search parameter
   // TODO: Write your answer here
   var queryString = document.location.search;
+
+  // serach parmerters, and only url
   var repoName = queryString.split('=')[1];
 
   if (repoName) {
@@ -14,6 +17,7 @@ var getRepoName = function () {
     getRepoIssues(repoName);
   } else {
     // Under what condition will this run?
+    //It will redirect you to the home page.
     // TODO: Write your answer here
     document.location.replace('./index.html');
   }
@@ -29,6 +33,7 @@ var getRepoIssues = function (repo) {
 
         // What is this checking for? Under what condition will this be `true`?
         // TODO: Write your answer here
+        
         if (response.headers.get('Link')) {
           displayWarning(repo);
         }
