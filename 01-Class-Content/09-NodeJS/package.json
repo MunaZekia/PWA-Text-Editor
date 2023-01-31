@@ -1,0 +1,16 @@
+{
+  "name": "muna.lib",
+  "version": "1.0.0",
+  "description": "muna's library25",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.1.4"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

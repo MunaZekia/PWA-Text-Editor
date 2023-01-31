@@ -21,6 +21,9 @@ Work with a partner to implement the following user story:
 ## 💡 Hints
 
 Why do we need to use `JSON.stringify`? How can we use the npm page for `inquirer` to see how to use checkboxes and lists? 
+//
+convert it into a string.
+
 
 ## 🏆 Bonus
 
