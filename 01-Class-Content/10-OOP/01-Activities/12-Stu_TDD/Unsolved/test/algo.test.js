@@ -2,6 +2,13 @@ const Algo = require("../algo");
 
 describe("Algo", () => {
   describe("reverse", () => {
+    it("should reverse the given string",()=>{
+      const algo = new Algo();
+      const str = "Hi";
+      const reversed = "[dlrow olie"
+    }
+      
+    )
     // TODO: Write a test for the `reverse` method that should take a string as an argument and return a new reversed version of the string
   });
 

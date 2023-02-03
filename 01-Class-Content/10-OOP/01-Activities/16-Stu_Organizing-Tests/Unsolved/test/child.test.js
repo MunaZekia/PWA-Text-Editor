@@ -2,11 +2,13 @@ const Child = require("../child");
 
 describe("Child", () => {
   // TODO: Add a comment describing the purpose of the following test suite
+  // it's creating an object 
   describe("Initialization", () => {
     it("should create an object with a name and age if provided valid arguments", () => {
       const child = new Child("Sarah", 3);
 
       // TODO: Add a comment describing the purpose of the following statements
+     // We're testing the value 
       expect(child.name).toEqual("Sarah");
       expect(child.age).toEqual(3);
     });

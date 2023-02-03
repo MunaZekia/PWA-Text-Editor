@@ -1,6 +1,7 @@
 function Algo() {}
 
 Algo.prototype.reverse = function(str) {
+  return str.split("").reverse().join("");
   // TODO: Your code here
 };
 
