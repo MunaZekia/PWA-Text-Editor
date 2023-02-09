@@ -7,6 +7,7 @@ Work with a partner to implement the following user story:
 ## Acceptance Criteria
 
 * It's done when I have set up middleware to serve all static files in Express.js.
+// A request handler with access to the application's request-response cycle 
 
 * It's done when I have used the `express.static()` method to declare the root directory to serve assets from.
 

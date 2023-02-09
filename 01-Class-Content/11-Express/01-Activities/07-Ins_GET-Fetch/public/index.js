@@ -5,6 +5,7 @@ const termButton = document.getElementById('term-btn');
 const getTerms = async () => {
   const result = await fetch('/api/terms', {
     method: 'GET',
+    body: ''
   });
   const json = await result.json();
   return json;

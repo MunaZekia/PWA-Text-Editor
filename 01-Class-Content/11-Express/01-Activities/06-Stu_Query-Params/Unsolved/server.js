@@ -9,12 +9,15 @@ const app = express();
 
 const sortHelper = (type) =>
   termData.sort(sortData('term', 'relevance', `${type}`));
-
+// the route would be using the "sortData.js file" by the ascen/decend order and based on relevance 
 // TODO: Add a comment describing the functionality of this route
 
 app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
-
+  //calls from the client side, make HTTP requests, 
+  //and handle incoming data whether in a string or JSON object.
+  //GET route to get all of the terms
+  
   const hasQuery = Object.keys(req.query).length > 0;
 
   if (hasQuery && req.query.sort === 'dsc') {
@@ -30,10 +33,11 @@ app.get('/api/terms/', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-
+// GET route that returns any specific term
 app.get('/api/term/:term', (req, res) => {
+  
   // TODO: Add a comment describing the content of req.params in this instance
-
+// s an object of the req object that contains route parameters
   const requestedTerm = req.params.term.toLowerCase();
 
   for (let i = 0; i < termData.length; i++) {
