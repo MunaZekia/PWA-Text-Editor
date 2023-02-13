@@ -6,9 +6,13 @@ const reviews = require('./db/reviews');
 const app = express();
 
 // TODO: Implement middleware for the parsing of JSON data
-
+//middleware, request handler with access to the application's req-res 
+app.use (express.json())
 // TODO: Implement middleware for parsing of URL encoded data
 
+app.use (express.urlencoded)({ extended: true });
+
+//It will parse the bodies of all incoming requests
 // GET request for ALL reviews
 app.get('/api/reviews', (req, res) => {
   // Log our request to the terminal

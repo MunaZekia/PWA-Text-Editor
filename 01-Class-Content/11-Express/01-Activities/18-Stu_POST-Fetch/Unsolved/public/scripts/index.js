@@ -12,6 +12,8 @@ const postReview = (review) =>
       'Content-Type': 'application/json',
     },
     // TODO: Add a comment describing why one would need to convert the JSON object to a string in this instance
+    // So we can sort the data in a database 
+    // and  send it to an API or web server
     body: JSON.stringify(review),
   })
     .then((res) => res.json())
@@ -20,6 +22,7 @@ const postReview = (review) =>
       return data;
     })
     // TODO: Add a comment describing the functionality of the catch statement
+    // It throws an error, & process it.
     .catch((error) => {
       console.error('Error in POST request:', error);
     });
