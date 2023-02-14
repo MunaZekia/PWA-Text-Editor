@@ -1,0 +1,32 @@
+[
+    {
+        "username": "j",
+        "topic": "UX",
+        "tip": "Don't use comic sans",
+        "tip_id": "3fe5d166-2f9e-4e3d-87a7-25a561207c6c"
+    },
+    {
+        "username": "Sarah",
+        "topic": "UI",
+        "tip": "Make your application accessible by adding alt properties to elements",
+        "tip_id": "ca0616fa-f603-4d85-a9c6-fa62c73a9bf9"
+    },
+    {
+        "username": "CoolGuy1",
+        "tip": "Don't use three different fonts on the same page",
+        "topic": "UX",
+        "tip_id": "c83c28af-9197-4f2f-b119-03236ecfc0b6"
+    },
+    {
+        "username": "Abraham Lincoln, Vampire Hunter",
+        "tip": "Avoid Papyrus, it is murder on the eyes\n",
+        "topic": "UX",
+        "tip_id": "329a714e-ed95-48e3-b9b8-0b80e001a89e"
+    },
+    {
+        "username": "TLC, the band of course",
+        "tip": "do not look for waterfalls, keep it to the rivers. you are used to\n",
+        "topic": "UX",
+        "tip_id": "c8f8eb06-eaa0-4f8a-b798-6b245dd35774"
+    }
+]
