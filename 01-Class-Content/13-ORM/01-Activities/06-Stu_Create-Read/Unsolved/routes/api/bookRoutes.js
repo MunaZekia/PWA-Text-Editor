@@ -2,6 +2,7 @@ const router = require('express').Router();
 const Book = require('../../models/Book');
 
 // TODO: Add a comment describing the purpose of this route
+// we use this when we want to see all the data in the database
 router.get('/', (req, res) => {
   // TODO: Add a comment describing the functionality of this method
   Book.findAll().then((bookData) => {
@@ -13,13 +14,18 @@ router.get('/', (req, res) => {
 router.get('/paperbacks', (req, res) => {
   Book.findAll({
     // TODO: Add a comment describing the functionality of this property
+    // The order option takes an array of items to order the query by or 
+    //a sequelize method
     order: ['title'],
     // TODO: Add a comment describing the functionality of this property
+    // The where option is used to filter the query
+    // 
     where: {
       is_paperback: true
     },
     attributes: {
       // TODO: Add a comment describing the functionality of this property
+      // 
       exclude: ['is_paperback', 'edition']
     }
   }).then((bookData) => {

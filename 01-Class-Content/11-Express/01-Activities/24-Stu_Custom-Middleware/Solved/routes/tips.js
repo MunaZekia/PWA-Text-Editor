@@ -4,7 +4,8 @@ const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the tips
 tips.get('/', (req, res) => {
-  readFromFile('./db/tips.json').then((data) => res.json(JSON.parse(data)));
+  readFromFile('./db/tips.json')
+  .then((data) => res.json(JSON.parse(data)));
 });
 
 // POST Route for a new UX/UI tip
