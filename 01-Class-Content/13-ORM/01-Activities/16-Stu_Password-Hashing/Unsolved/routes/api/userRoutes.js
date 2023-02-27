@@ -3,6 +3,8 @@ const bcrypt = require('bcrypt');
 const User = require('../../models/User');
 
 // TODO: Add comments describing the functionality of this `login` route
+// hash/find the "login" from 'req.body' and save to userData
+//
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
