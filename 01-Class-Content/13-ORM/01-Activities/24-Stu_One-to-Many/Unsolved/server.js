@@ -9,9 +9,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // turn on routes
-app.use(routes);
+app.use(routes); 
+// this is the same as app.use(require('./routes'))
 
 // turn on connection to db and server
+// force: true will drop the table if it already exists
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });

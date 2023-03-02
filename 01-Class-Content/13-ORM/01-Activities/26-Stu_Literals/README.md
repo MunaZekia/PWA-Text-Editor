@@ -26,7 +26,8 @@ The user data in the response does not include a `shortBooks` property.
 
 ## 💡 Hints
 
-How could you obtain this short novel count using a regular SQL query?
+How could you obtain this short novel count using a regular SQL query?  
+// SELECT COUNT(*) FROM books WHERE pages BETWEEN 100 AND 300 AND reader_id = 1;
 
 ## 🏆 Bonus
 

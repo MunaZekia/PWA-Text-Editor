@@ -15,12 +15,14 @@ LibraryCard.init(
       type: DataTypes.UUID,
       defaultValue: UUIDV4,
     },
-    reader_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'reader',
-        key: 'id',
+    reader_id: { // This is the foreign key
+      type: DataTypes.INTEGER,  // This is the data type of the foreign key
+      references: {   // This is the reference to the other model
+        model: 'reader',  // This is the model name
+        key: 'id',  
+        // This is the key in the other model that we're referencing
       },
+
     },
   },
   {

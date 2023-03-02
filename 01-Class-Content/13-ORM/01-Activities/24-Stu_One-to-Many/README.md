@@ -1,3 +1,4 @@
+
 # 🏗️ Implement One-to-Many Association Between Reader and Book Models
 
 Work with a partner to implement the following user story:
@@ -56,7 +57,9 @@ When you associate these models, what will the relationship look like? Would use
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
-* As a JavaScript developer using Sequelize, why do you still need to know SQL?
+* As a JavaScript developer using Sequelize, why do you still need to know SQL? 
+
+==> Because you need to know how to write the queries to create the tables and the relationships between them.
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

@@ -36,12 +36,17 @@ router.get('/:id', async (req, res) => {
 // CREATE a card
 router.post('/', async (req, res) => {
   try {
-    const locationData = await LibraryCard.create({
+    const locationData = await LibraryCard.create({ 
+      // this is to create a library card
       // TODO: Add a comment describing where the value of `req.body.reader_id` comes from
-      reader_id: req.body.reader_id,
+      // where does the value of req.body.reader_id come from?
+      reader_id: req.body.reader_id, 
+      // this is to get the reader id from the body
     });
     res.status(200).json(locationData);
-  } catch (err) {
+    // this is to send the location data as a json object
+  } catch (err) { 
+    // this is to catch any errors
     res.status(400).json(err);
   }
 });
