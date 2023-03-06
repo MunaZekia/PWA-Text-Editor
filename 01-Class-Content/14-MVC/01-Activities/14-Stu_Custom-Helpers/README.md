@@ -9,7 +9,7 @@ Work with a partner to resolve the following issues:
 * When a museum visitor visits the painting page, it should clearly and accurately show the date that the exhibition will end.
 
 * The end date is calculated by adding five years to the painting's `exhibition_date`.
-
+we can use the `moment` library to format the date. 
 * The end date should be formatted as `M/D/YYYY`.
 
 ## Actual Behavior

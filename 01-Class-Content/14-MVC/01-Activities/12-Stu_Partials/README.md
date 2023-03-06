@@ -24,13 +24,20 @@ The following image demonstrates how the painting's details should be rendered o
 
 ## 💡 Hints
 
-How do we set up the database? What command do we use to seed it? And what is the syntax for Handlebars.js partials?
+How do we set up the database? 
+we need to seed it with the following command:
+
+```sh  the command is node seeders/seed.js in the terminal step one is to run the command npm install to install the dependencies. then run the command node server.js to start the server. then run the command node seeders/seed.js to seed the database.
+```
+What command do we use to seed it? And what is the syntax for Handlebars.js partials?
+We use the command node seeders/seed.js to seed the database. The syntax for Handlebars.js partials is {{>painting-details}}.
 
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * What are some other ways that we can use Handlebars.js partials? How else can partials be useful?
+To render the details of a painting. We can use partials to render the details of a painting, the details of a gallery, and the details of an artist.
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

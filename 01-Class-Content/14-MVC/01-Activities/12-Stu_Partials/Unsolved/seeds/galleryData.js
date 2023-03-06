@@ -1,4 +1,5 @@
 const { Gallery } = require('../models');
+// 
 
 const gallerydata = [
   {

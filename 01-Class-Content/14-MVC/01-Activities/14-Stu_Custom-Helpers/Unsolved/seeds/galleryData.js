@@ -22,7 +22,6 @@ const gallerydata = [
     ending_date: 'March 19, 2021 19:00:00',
   },
 ];
-
 const seedGallery = () => Gallery.bulkCreate(gallerydata);
 
 module.exports = seedGallery;
