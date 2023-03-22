@@ -3,6 +3,7 @@ const { User } = require('../models');
 const withAuth = require('../utils/auth');
 
 // TODO: Add a comment describing the functionality of the withAuth middleware
+// withAuth is checking if the user is logged in. If the user is not logged in, it's redirected to the login page. If the user is logged in, the next() method is called.
 router.get('/', withAuth, async (req, res) => {
   try {
     const userData = await User.findAll({
@@ -15,6 +16,8 @@ router.get('/', withAuth, async (req, res) => {
     res.render('homepage', {
       users,
       // TODO: Add a comment describing the functionality of this property
+      // this is passing the logged_in property to the homepage template
+      // if the user is logged in, the homepage template will display the logout button
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -24,6 +27,7 @@ router.get('/', withAuth, async (req, res) => {
 
 router.get('/login', (req, res) => {
   // TODO: Add a comment describing the functionality of this if statement
+  // if the user is logged in, they are redirected to the homepage
   if (req.session.logged_in) {
     res.redirect('/');
     return;

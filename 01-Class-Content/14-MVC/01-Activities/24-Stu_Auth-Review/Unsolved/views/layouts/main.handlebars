@@ -14,6 +14,9 @@
       User Registry
     </h1>
     <!-- TODO: Add a comment describing the functionality of this helper -->
+    // if logged in is true then show the logout button
+    // if logged in is false then show the login button
+    
     {{#if logged_in}}
     <nav>
       <button class="btn" id="logout">logout</button>
@@ -28,6 +31,9 @@
   </footer>
 
   <!-- TODO: Add a comment describing the functionality of this helper -->
+  
+  // if logged in is true then show the logout script
+  // we are using the script tag to call the logout.js file
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
