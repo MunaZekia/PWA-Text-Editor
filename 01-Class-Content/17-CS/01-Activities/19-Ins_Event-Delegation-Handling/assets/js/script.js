@@ -1,6 +1,6 @@
 // Select the container which holds our buttons that we want to add our event listener too.
 const containerEl = document.getElementById('container');
-
+// 
 const clickHandler = function(event) {
   // Convert the `data-count` attribute from a string to an integer.
   let count = parseInt(event.target.getAttribute('data-count'));

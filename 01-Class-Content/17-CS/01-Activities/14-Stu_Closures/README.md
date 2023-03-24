@@ -23,6 +23,7 @@ When is a closure created?
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * What is the lexical environment? 
+// lexical environment is the scope in which a variable is declared. also known as the scope chain.
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

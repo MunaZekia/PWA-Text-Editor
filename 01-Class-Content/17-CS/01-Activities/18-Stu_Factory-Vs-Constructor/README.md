@@ -15,6 +15,7 @@ Work with a partner to implement the following user story:
 ## 💡 Hints
 
 What scope does your inner function have access to? 
+// Your inner function has access to the outer function's variables, including the parameter.
 
 ## 🏆 Bonus
 
