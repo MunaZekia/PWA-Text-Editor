@@ -6,6 +6,7 @@ const carNoise = 'Honk';
 // it is stored in the global execution context.
 // It is assigned the function, goFast
 const goFast = speed => {
+  
   // 4) When is speed assigned a value? Where is this value stored?
   // speed is assigned a value when the goFast function is called.
   // and inside the function of goFast
