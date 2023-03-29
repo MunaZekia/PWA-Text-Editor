@@ -20,7 +20,8 @@ const sortedArr = [2, 23, 34, 42, 100, 500];
 
 ## Notes to the Candidate
 
-The quick sort algorithm requires a bit of knowledge in how to handle recursion and how to visualize a binary tree. The key to learning it is to take it step-by-step and an visualize what the data looks like at each step.
+The quick sort algorithm requires a bit of knowledge in how to handle recursion and how to visualize a binary tree. The key to learning it is to take it step-by-step and an visualize what the data looks like at each step. quick sort is a divide and conquer algorithm, meaning that it breaks down the problem into smaller and smaller pieces until it can be solved.
+
 
 Take a moment to assess the question being asked and restate it to the interviewer to ensure that you understand the expectations. It's okay to ask questions for clarification during an interview, as long as the question isn't seeking for the direct answer to the question. Some interview questions are purposely stated in a vague fashion to force a job candidate to ask follow-up questions for clarification, it shows that the candidate is thinking critically about the problem.
 
@@ -41,6 +42,7 @@ Here are some prompts an interviewer may ask to ensure you understand the proble
 * **Prompt**: Why is it okay to select a pivot value at random and not simply taking the value at the middle of the array?
 
 * **Good Answer From Candidate**: The array is likely unsorted, so picking a pivot value at random is just as efficient&mdash;if not more efficient&mdash;than using the value at the middle of the array.
+
 
 * **Note**: With a quick sort, it is all about sorting the values a little bit at a time by splitting the array into smaller sets, sorting them as smaller sets, and concatenating all of the smaller sets to return the array with the values sorted. The a pivot value is what's used to determine where to split the array.
 
@@ -65,6 +67,8 @@ Here are some prompts an interviewer may ask to ensure you understand the proble
 * **Prompt**: Since we pulled the pivot value out of the array, how do we reinsert it into the array and have it be sorted?
 
 * **Candidate Explains Solution**: Because the array was sorted to the left and right of the pivot value, we can insert it between the two using array concatenation and assume it'll be greater than (or equal to) anything in the left array and less than anything in the right array.
+// [2, 23, 34, 42, 100, 500]
+quick sort vs bubble sort
 
 * **Note**: The pivot value for each iteration of the quick sort function has an important role because it is what connects the values lesser than or equal to it in the left array to the values greater than it in the right array.
 

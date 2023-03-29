@@ -30,8 +30,8 @@ This line of code&mdash;known as the [shebang interpreter directive](https://en.
 
 While the shebang interpreter directive is important, it has nothing to do with the actual functionality of our script, so let's add that now with the following code:
 
+
 ```sh
-# print "Hello World!" to the command line 
 echo "============"
 echo "Hello World!"
 echo "============"

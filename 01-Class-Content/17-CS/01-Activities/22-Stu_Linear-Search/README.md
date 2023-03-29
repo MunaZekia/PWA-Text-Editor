@@ -23,6 +23,8 @@ How can we run the unit tests to test our algorithm?
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * What is a more efficient search algorithm?
+// A more efficient search algorithm is the binary search algorithm. The binary search algorithm works by dividing the array in half and then comparing the value to the middle value of the array. If the value is less than the middle value, the algorithm will search the left half of the array. If the value is greater than the middle value, the algorithm will search the right half of the array. This process will continue until the value is found or the array is empty.
+
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

@@ -57,12 +57,15 @@ Here are some prompts an interviewer may ask to ensure you understand the proble
 * **Prompt**: What happens when we identify a value that should be swapped with another?
 
 * **Good Answer From Candidate**: We swap the values by storing one value in a temporary variable and overwriting them at their identified indices in the array.
+by storing one value in a temporary variable and overwriting them at their identified indices in the array. or we can use the `Array.prototype.splice()` method to swap the values. in other words, we can use the `Array.prototype.splice()` method to swap the values. 
 
 * **Note**: Some developers will make a specific function to handle swapping values in an array, but it's also okay to do it within the bubble sort algorithm itself. Swapping a value will necessitate a temporary variable to hold one value before it is overwritten by the value it's being swapped with.
 
 - - -
 
 * **Prompt**: If we don't want to use the force method and implement one that's a bit more efficient, how can we know if the array is sorted early?
+
+we can use a `while` loop and implement a flag that checks if any values haven't been swapped, indicating that the array is now sorted. 
 
 * **Good Answer From Candidate**: We can use a `while` loop and implement a flag that checks if any values haven't been swapped, indicating that the array is now sorted.
 

@@ -12,3 +12,5 @@ const mergeSort = (array) => {};
 const sorted = mergeSort(unsortedInputArray);
 console.log('Post Sort:', sorted.join(' '));
 console.log('DONE!');
+
+// mergeSort is a sorting algorithm that uses a divide and conquer approach to sort an array
