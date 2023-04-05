@@ -1,4 +1,5 @@
 const { Post } = require('../models');
+const { populate } = require('../models/Post');
 
 module.exports = {
   getPosts(req, res) {
@@ -11,6 +12,10 @@ module.exports = {
   },
   getSinglePost(req, res) {
     Post.findOne({ _id: req.params.postId })
+           .populate('tags')
+           // this is the name of the field in the Post model
+           // that we want to populate
+          
       .then((post) =>
         !post
           ? res.status(404).json({ message: 'No post with that ID' })

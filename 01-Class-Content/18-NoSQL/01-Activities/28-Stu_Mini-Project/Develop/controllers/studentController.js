@@ -3,9 +3,20 @@ const { ObjectId } = require('mongoose').Types;
 const { Student, Course } = require('../models');
 
 // TODO: Create an aggregate function to get the number of students overall
+// .count('students')
+// .exec() method is used to execute the aggregate method on the Student model
+//.exec() stands for 
+
 const headCount = async () =>
   Student.aggregate()
-    // Your code here
+  .count('studentCount')
+
+
+    // Your code here 
+    
+    .exec() 
+    //exec() method is used to execute the aggregate method on the Student model
+    
     .then((numberOfStudents) => numberOfStudents);
 
 // Execute the aggregate method on the Student model and calculate the overall grade by using the $avg operator
@@ -13,6 +24,11 @@ const grade = async (studentId) =>
   Student.aggregate([
     // TODO: Ensure we include only the student who can match the given ObjectId using the $match operator
     {
+      $match: {
+        _id: ObjectId(studentId),
+        //objectId() method for converting studentId string into an ObjectId for querying database
+
+      },
       // Your code here
     },
     {
@@ -20,6 +36,14 @@ const grade = async (studentId) =>
     },
     // TODO: Group information for the student with the given ObjectId alongside an overall grade calculated using the $avg operator
     {
+      $group: {
+        _id: '$_id',
+        overallGrade: {
+          $avg: '$assignments.score',
+          //this means that we are going to average the score of the assignments. By using the $avg operator, we are going to average the score of the assignments. making 
+        },
+
+      },
       // Your code here
     },
   ]);
@@ -46,6 +70,7 @@ module.exports = {
       .select('-__v')
       .lean()
       .then(async (student) =>
+      // we only do it to the single student because we are only going to be getting one student.
         !student
           ? res.status(404).json({ message: 'No student with that ID' })
           : res.json({

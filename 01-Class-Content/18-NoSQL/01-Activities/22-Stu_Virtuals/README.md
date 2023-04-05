@@ -26,17 +26,23 @@ Work with a partner to implement the following user story:
 
 * It is done when I have performed a GET request to `http://localhost:3001/api/users/` to get all users and confirmed that the `fullName` virtual attribute is present in the response.
 
+//virtual means that it is not stored in the database, it is a computed property. // computed property is 
+
 ## 💡 Hints
 
 * What method do we use on a Mongoose schema to create a virtual property?
 
+//we use the .virtual() method and it takes in a string as a parameter
+
 * Why do we need the `this` keyword when working with virtuals?
+// We need it because it refers to the current instance of the model. 
 
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * What are some of the limitations of Mongoose virtuals as they relate to queries?
+// the limitation is that virtuals are not included in queries by default. It means that if you want to query a virtual property, you have to explicitly include it in the query.
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

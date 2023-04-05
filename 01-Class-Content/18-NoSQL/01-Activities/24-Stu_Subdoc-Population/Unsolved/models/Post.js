@@ -13,8 +13,13 @@ const postSchema = new Schema(
     },
     tags: [
       {
-        type: 'Tag',
-        ref: 'Tag',
+        //type: Schema.Types.ObjectId, // This is the type of the _id field in the Tag model and we are using it as a reference to the Tag model.
+        // we need to  reference the Tag model by its ObjectId and we are using the ObjectId as a foreign key in the Post model.
+        type: Schema.Types.ObjectId,
+        // This is the type of the _id field in the Tag model
+        
+        ref: 'tag',
+        //lower case because mongoose will automatically make it lowercase
       },
     ],
     text: {
@@ -34,8 +39,11 @@ const postSchema = new Schema(
 // Create a virtual property `tagCount` that gets the amount of comments per user
 postSchema
   .virtual('tagCount')
-  // Getter
+   Getter
   .get(function () {
+    return this.tags.length;
+  });
+  postSchema.virtual('tagCount').get(function() {
     return this.tags.length;
   });
 
