@@ -1,8 +1,9 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // Require the GenerateSW class of the WorkBoxPlugin 
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const path = require('path');
+//
 
 module.exports = {
   mode: 'development',
@@ -20,6 +21,18 @@ module.exports = {
     new MiniCssExtractPlugin(),
     // TODO: Add parameters to GenerateSW class to configure runtime caching
     new WorkboxPlugin.GenerateSW()
+    exclude: [/\.(?:png|jpg|jpeg|svg)$/],
+    runtimeCaching: [{
+      urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'images',
+        expiration: {
+          maxEntries: 2,
+        },
+      },
+      
+    }]
   ],
   module: {
     rules: [

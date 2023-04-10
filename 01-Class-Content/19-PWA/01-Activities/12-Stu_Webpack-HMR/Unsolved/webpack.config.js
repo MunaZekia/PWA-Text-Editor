@@ -9,11 +9,21 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer : {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080,
+    // port 8080 is the default port for webpack-dev-server
+    //webpack-dev-server will serve our files from the dist folder
+    hot: 'only',
+    // we use hot module replacement, 
+    //so we don't need to refresh the page
+  },
   // TODO: Add devServer object
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
-      title: 'Webpack Plugin',
+      title: 'Hot Module Reloading'
     }),
     new MiniCssExtractPlugin(),
   ],

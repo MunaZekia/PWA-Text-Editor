@@ -31,6 +31,10 @@ Refer to the documentation:
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * How does an object store in IndexedDB compare to a table or collection in other databases?
+// Object stores in IndexedDB are similar to tables in other databases. They are used to store data in the form of records. Each record is a JavaScript object that contains key-value pairs. The key is used to identify the record, and the value is the data that is stored in the record.
+
+// indexdb the size of the database is limited to 2GB.
+// but the size of the object store is limited to 50GB.
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

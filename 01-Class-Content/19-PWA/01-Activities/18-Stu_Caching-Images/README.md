@@ -3,6 +3,7 @@
 Work with a partner to resolve the following issue:
 
 * As a developer, I want to be able use runtime caching so that my images are cached as they are used and not automatically precached.
+// 
 
 ## Expected Behavior
 

@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 //TODO: Add WorkboxPlugin with GenerateSW class
+const { GenerateSW } = require('workbox-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -17,6 +18,10 @@ module.exports = {
       template: './index.html',
       title: 'Webpack Plugin',
     }),
+    // add new gen
+    new WorkboxPlugin.GenerateSW(),
+    //new workboxPlugin.GenerateSW(), is the same as new WorkboxPlugin.GenerateSW() 
+    //it helps to cache the files and make the app work offline
     new MiniCssExtractPlugin(),
   ],
   module: {

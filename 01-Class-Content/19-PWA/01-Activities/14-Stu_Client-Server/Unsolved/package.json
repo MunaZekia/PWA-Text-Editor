@@ -19,7 +19,12 @@
   },
   "comments": {
     "comment-start:dev": "TODO: Add your comment about start:dev script inside these quotes",
+    // start:dev script runs the client and server concurrently. 
+    //Meaning, the client and server will run at the same time.
     "comment-concurrently": "TODO: Add your comment about concurrently inside these quotes"
+    // concurrently is a package that allows us to run multiple commands at the same time.
+    // In this case, we are running the client and server concurrently.
+    //"comment-concurrently" is a comment that will be displayed in the terminal when you run npm install.
   }
 }
 

@@ -32,8 +32,7 @@ moduleContent.innerHTML = `<div class="container">
 targetEl.appendChild(moduleContent);
 
 // register a service worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('./sw.js')
-    .then((register) => console.log(register));
+if(module.hot){
+  module.hot.accept();
+  
 }
