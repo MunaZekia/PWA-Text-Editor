@@ -7,8 +7,12 @@ Work with a partner to implement the following user story:
 ## Acceptance Criteria
 
 * It is done when I can install my application as a Progressive Web App.
+// we can first check if the manifest.json file is generated in the dist folder by running npm run build
+// 
+        
 
 * It is done when I can see my `manifest.json` file generated inside Chrome DevTools.
+// we can check this by going to the application tab in chrome devtools and then clicking on the manifest tab
 
 ## 📝 Notes
 
@@ -21,12 +25,15 @@ Refer to the documentation:
 ## 💡 Hints
 
 How could our JSON be represented in a JavaScript object? 
+// we can use the following code to create a manifest.json file
+//
 
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * What is each key in a `manifest.json` file responsible for? 
+// It is responsible for a different aspect of the application. For example, the name key is responsible for the name of the application.
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

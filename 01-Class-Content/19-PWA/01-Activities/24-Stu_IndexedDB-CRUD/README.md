@@ -3,6 +3,22 @@
 Work with a partner to resolve the following issues:
 
 * As a user, I want to be able to delete a list item from a list when I click on the list item.
+// we need to add an event listener to the list item
+// by clicking on the list item, we need to remove it from the list
+// we need to remove the list item from the database
+// we need to update the database
+// we can start by going to the index.js file
+//export const deleteDb = async (id) => {
+  console.log('DELETE from the database', id);
+  const todosDb = await openDB('todos', 1);
+  const tx = todosDb.transaction('todos', 'readonly');
+  const store = tx.objectStore('todos');
+  const request = store.delete(id);
+  const result = await request;
+  console.log('result.value', result);
+  return result;
+};
+ 
 
 * As a user, I want to be able to edit a list item when I click the Edit button.
 
@@ -47,12 +63,16 @@ The following image demonstrates the web application's appearance and functional
 ## 💡 Hints
 
 What types of permissions do you need to alter data inside a database? 
+// we need to have the permission to read and write to the database
+// and we need to have the permission to delete from the database
 
 ## 🏆 Bonus
 
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * How does the usage of CRUD operations with IndexedDB compare with their usage with SQL databases? 
+// is 
+// we need to use the same CRUD operations with IndexedDB as we do with SQL databases
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

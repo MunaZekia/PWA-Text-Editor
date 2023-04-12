@@ -20,7 +20,23 @@ module.exports = () => {
       }),
 
       new GenerateSW(),
+
       new WebpackPwaManifest({
+        // TODO: Add an array of files to precache
+        // 
+
+        name: 'TODOs List',
+        short_name: 'TODOs',
+        description: 'An application that allows you to create a list of TODOs!',
+        background_color: '#01579b',
+        crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+        icons: [
+          {src: path.resolve('assets/images/icons/icon-512x512.png'),
+
+            sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+
+          }
+        ]
         // TODO: Create a manifest.json:
       }),
      

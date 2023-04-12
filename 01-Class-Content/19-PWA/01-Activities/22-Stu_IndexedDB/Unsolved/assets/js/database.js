@@ -24,6 +24,10 @@ const initdb = async () =>
         console.log('todos database already exists');
         // console.log a message to the console
         return;
+
+        //transaction is a method that takes two parameters:
+        // 1. The name of the object store
+        // 2. The mode of the transaction
       }
       // TODO: Add a comment explaining what we're doing with the object store:
       db.createObjectStore('todos', { keyPath: 'id', autoIncrement: true });

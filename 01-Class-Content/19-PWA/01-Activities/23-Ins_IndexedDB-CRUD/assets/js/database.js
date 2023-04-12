@@ -21,9 +21,12 @@ export const postDb = async (content) => {
 
   // Create a new transaction and specify the database and data privileges.
   const tx = todosDb.transaction('todos', 'readwrite');
-
+  //transaction is used to create a new transaction, 
+  //which means that we are going to be making changes to the database
+// 
   // Open up the desired object store.
   const store = tx.objectStore('todos');
+
 
   // Use the .add() method on the store and pass in the content.
   const request = store.add({ todo: content });
