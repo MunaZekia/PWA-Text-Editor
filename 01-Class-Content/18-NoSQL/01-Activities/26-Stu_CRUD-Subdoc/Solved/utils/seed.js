@@ -1,5 +1,6 @@
 const connection = require('../config/connection');
 const { User, Application } = require('../models');
+// User and Application are the models we created in the models folder
 const { getRandomName, getRandomApplications } = require('./data');
 
 connection.on('error', (err) => err);

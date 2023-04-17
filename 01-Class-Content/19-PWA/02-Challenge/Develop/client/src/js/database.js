@@ -1,5 +1,6 @@
 import { openDB } from 'idb';
 
+// we are using the openDB method from the idb library to open a database called jate
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
@@ -15,7 +16,11 @@ const initdb = async () =>
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => console.error('putDb not implemented');
 
+
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => console.error('getDb not implemented');
 
 initdb();
+
+
+
