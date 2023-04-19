@@ -3,11 +3,19 @@ import React from 'react';
 import '../styles/Section.css';
 
 // TODO: Create a styles object called "styles"
+const styles = {
+  section: {
+    background: 'orange',
+    color: 'white',
+    fontSize: '20px',
+
+  },
+};
 
 function Section() {
   // TODO: Add a style attribute to `section`
   return (
-    <section className="section">
+    <section style= {style.card}className="section">
       <h2>Lorem Ipsum Dolor Sit Amet</h2>
       <p>
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem

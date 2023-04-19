@@ -7,19 +7,43 @@ function BucketList() {
 
   // Function to add a bucket list item
   const addBucketItem = (item) => {
+    // Make sure that the value isn't empty
+    if (!item.text) {
+      return;
+    }
+
+    // Create a new bucket list item with an ID and a completed value
+    const newItem = {
+      id: Math.floor(Math.random() * 10000),
+      text: item.text,
+      completed: false,
+    };
+  };
 
     // TODO: Write logic to add the new bucket item to the bucket state variable
     
-  };
+  
 
   // Function to mark bucket list item as complete
   const completeBucketItem = (id) => {
     // If the ID passed to this function matches the ID of the item that was clicked, mark it as complete
     let updatedBucket = bucket.map((item) => {
+      if (item.id === id) { 
+        // we are using the bang operator to flip the boolean value
+        // fliping the boolean value is called a toggle
+        // types of operator are unary, binary, ternary
+        // 
+        item.completed = !item.completed;// this line is calling from the bucket state variable which is an array and found in the useState hook form line 5  
+        
+        // the bang operator is a unary operator which means it only takes one argument, one argument is the item.completed
+        // the argument be
+      }
+      return item;
+    });
       
       // TODO: Write logic that marks an item as complete or incomplete when invoked
 
-    });
+  
 
     setBucket(updatedBucket);
   };
@@ -28,7 +52,9 @@ function BucketList() {
   const removeBucketItem = (id) => {
     // TODO: Write logic that will return an array of items that don't contain the ID passed to this function
 
-
+    const array = bucket.filter((item) => item.id !== id);
+    // [...bucket] is the spread operator, which 
+    // we are using the spread operator to copy the array
     // TODO: Update the bucket state variable
   };
 

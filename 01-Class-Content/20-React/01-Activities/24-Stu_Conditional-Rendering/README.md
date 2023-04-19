@@ -11,6 +11,8 @@ Before you begin this activity, complete the following steps:
 3. This project uses Bootstrap, so don't forget to import it inside `index.js`:
 
      `import 'bootstrap/dist/css/bootstrap.min.css'`
+
+4. Run `npm install` in the [00-practice-app](../00-practice-app/) directory to install the dependencies.
    
 ## Activity
 
@@ -29,6 +31,7 @@ Refer to the documentation:
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * Can you think of some scenarios where conditional rendering would be beneficial?
+// A website that has a login page, and if the user is logged in, they can see a different page than if they are not logged in.
 
 Use [Google](https://www.google.com) or another search engine to research this.
 

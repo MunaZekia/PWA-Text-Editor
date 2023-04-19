@@ -2,7 +2,9 @@ import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import pretty from 'pretty';
+
 // TODO: Import the IssueItem component here
+ import IssueItem from '../IssueItem';
 
 let container = null;
 
@@ -32,12 +34,27 @@ describe('IssueItem', () => {
   it('should contain the expected text', () => {
     act(() => {
       // TODO: Add a render code block that checks to see if the component renders properly
+      <a href= {issue.html_url} target="_blank" rel="noopener noreferrer"> {issue.title} </a>
+      // this is the render method that needs to be called
       // HINT: The render method needs a target "container"
-      render();
+      render(
+        // component testing is the same as the other testing
+
+      <IssueItem issue={issue} />,// 
+        // it is curly braces because we are passing in an object
+        
+      );
     });
     expect(container.textContent).toBe('Git: Support git history in VSCode');
   });
 
   // TODO: render the IssueItem component and format the rendered HTML with the pretty package before saving it as an snapshot.
-  it('should match snapshot', () => {});
+  it('should match snapshot', () => {
+    act(() => {
+      render(<IssueItem issue={issue} />, container);
+    });
+    expect(pretty(container.innerHTML)).toMatchSnapshot();
+    // this is the render method that needs to be called
+    // container.innerHTML is the HTML that is rendered
+  });
 });

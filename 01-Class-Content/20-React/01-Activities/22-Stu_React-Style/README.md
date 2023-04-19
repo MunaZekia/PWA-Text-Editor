@@ -47,8 +47,11 @@ The following images demonstrates the web application's appearance and functiona
 If you have completed this activity, work through the following challenge with your partner to further your knowledge:
 
 * What are some other ways that you can style a component in React?
+// we can style a component in react by using a css file, inline styling, and using a library like bootstrap
 
 Use [Google](https://www.google.com) or another search engine to research this.
 
 ---
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+// we can the code by 

@@ -3,11 +3,19 @@ import React from 'react';
 import '../styles/Navbar.css';
 
 // TODO: Create a styles object called "styles"
-
+const styles = {
+  card: {
+    background: 'green',
+    color: 'white',
+    justifyContent: 'flex-end',
+    fontSize: '20px',
+  },
+};
 function Navbar() {
   // TODO: Add a style attribute to `nav`
+  // as follows: style={styles.nav}
   return (
-    <nav className="navbar">
+    <nav style= {style.nav} className="navbar">
       <a href="/">Welcome</a>
     </nav>
   );
