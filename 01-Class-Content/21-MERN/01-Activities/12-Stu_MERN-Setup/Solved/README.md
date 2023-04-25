@@ -1,6 +1,9 @@
 # Add Comments to Implementation of the MERN-stack Architecture
 
 ## Root-level Functionality
+// how do we do front end and back end at the same time?
+* The `package.json` file: This file contains all of the dependencies for our entire application, as well as the scripts that we can run to execute our application.
+// we are uitiziing appollo server for the back end and react for the front end
 
 * The `npm start` script: In production, we only run the back-end server, which will serve the built React application code as its front end.
     

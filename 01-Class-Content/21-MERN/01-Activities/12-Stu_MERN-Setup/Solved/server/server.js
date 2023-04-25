@@ -16,6 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 if (process.env.NODE_ENV === 'production') {
+  // this is where we will serve our production build of our react app
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
