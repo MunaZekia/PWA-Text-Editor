@@ -13,6 +13,7 @@ module.exports = {
 
     if (!token) {
       return req;
+  
     }
 
     try {

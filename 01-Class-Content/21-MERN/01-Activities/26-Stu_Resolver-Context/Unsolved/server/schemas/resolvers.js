@@ -10,6 +10,7 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('thoughts');
     },
+    
     thoughts: async (parent, { username }) => {
       const params = username ? { username } : {};
       return Thought.find(params).sort({ createdAt: -1 });
@@ -17,7 +18,12 @@ const resolvers = {
     thought: async (parent, { thoughtId }) => {
       return Thought.findOne({ _id: thoughtId });
     },
-    me: async (parent, context) => {
+    me: async (parent,args,context) => { 
+      // what this line does is that it checks if the user is logged in and if they are it will return the user data
+     // the parent is the user data, the args is the username and the context is the user data
+     // and the context is the user data
+      
+      
       if (context.user) {
         return User.findOne({ _id: context.user._id }).populate('thoughts');
       }

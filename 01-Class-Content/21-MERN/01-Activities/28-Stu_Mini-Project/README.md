@@ -22,7 +22,11 @@ The mini-project is complete when the following criteria are met:
 
 * The `/` homepage route renders a list of technologies.
 
-* The `/matchup` route renders a form to choose two technologies to create a matchup.
+// we need to create a query to get the list of technologies
+// on line 8 of the `client/src/pages/Home.js` file, we need to replace the `GET_TECHNOLOGIES` query with the following query:
+
+
+* The `/matchup` route renders a form to choose two technologies to create a matchup. 
 
 * The `/matchup/:id` route renders a matchup to vote on.
 

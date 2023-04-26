@@ -6,6 +6,9 @@ const path = require('path');
 // Uncomment the following code once you have built the queries and mutations in the client folder
 // const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
+// A HOOK IS A FUNCTION THAT ALLOWS YOU TO EXECUTE CODE AT SPECIFIC TIMES DURING THE APPLICATION LIFECYCLE
+//fo example, the useEffect hook allows you to execute code when the component mounts
+
 
 // Comment out this code once you have built out queries and mutations in the client folder
 const routes = require('./routes');

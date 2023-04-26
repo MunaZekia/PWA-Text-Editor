@@ -4,6 +4,10 @@ Work with a partner to resolve the following issue:
 
 * As a user, I want to log in to the application and remain logged in.
 
+// the problem is on the client side, the token is not being stored in local storage
+// so  we need to change it to local storage by using the setItem method
+// the code goes as follows: localStorage.setItem("id_token", idToken);
+
 ## Expected Behavior
 
 A user should be able to sign up or log in to their account and receive a JSON Web Token with a two-hour expiration.
@@ -23,6 +27,7 @@ To reproduce the problem, follow these steps:
 3. Open <localhost:3000/signup> in the browser to create a user and a session or log in as one of the seeded users at <localhost:3000/login>.
 
 4. When page redirects to the homepage, the user is still prompted to log in or sign up.
+
 
 ---
 

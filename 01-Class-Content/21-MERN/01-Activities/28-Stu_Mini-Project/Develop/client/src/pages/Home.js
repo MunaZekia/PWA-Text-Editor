@@ -3,12 +3,36 @@ import { Link } from 'react-router-dom';
 import { getAllMatchups } from '../utils/api';
 
 // Uncomment import statements below after building queries and mutations
-// import { useQuery } from '@apollo/client';
-// import { QUERY_MATCHUPS } from '../utils/queries';
+import { useMutation } from '@apollo/client';
 
-const Home = () => {
-  const [matchupList, setMatchupList] = useState([]);
+// this is the hook that allows us to execute mutations
+import { ADD_MATCHUP } from '../utils/mutations';
+// we have to change ADD_MATCHUP to the name of our mutation
 
+import { useQuery } from '@apollo/client';
+// this is the hook that allows us to execute queries
+import { QUERY_MATCHUPS } from '../utils/queries';
+// this is the query we will execute,
+
+
+const Home= () => {
+  // this will be the component that will display the list of matchups
+  const{loading, data} = useQuery(QUERY_MATCHUPS);
+  // this will execute the query and store the response in the data variable
+  const QUERY_MATCHUPS = data?.matchups || [];
+  // this will store the matchups in the QUERY_MATCHUPS variable
+
+
+
+// const Home = () => {// this will be the component that will display the list of matchups
+//   const [matchupList, setMatchupList] = useState([
+//     // this will hold the list of matchups
+//     {
+//       _id: 1,// this is the id of the matchup
+//       tech1: 'React',// this is the first technology
+//       tech2: 'Angular',// this is the second technology
+//     },
+//    ]);
   useEffect(() => {
     const getMatchupList = async () => {
       try {

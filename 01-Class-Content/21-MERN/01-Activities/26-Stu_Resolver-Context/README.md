@@ -12,6 +12,8 @@ When a logged-in user visits the `/me` route, they should see the thoughts they 
 
 The profile page displays a message informing the user they must be logged in to see the content.
 
+//
+
 ## Steps to Reproduce the Problem
 
 To reproduce the problem, follow these steps:
@@ -32,6 +34,10 @@ To reproduce the problem, follow these steps:
 5. Navigate to <localhost:3000/me>.
 
 6. The app does not display the thoughts from this user.
+// the problem is that the query is not being passed to the profile page. 
+// the reason the query is not being passed to the profile page is because the query is not being passed to the profile page.
+// we can pass to the profile page by using the context provider.
+// the bug is in the profile.js file, line
 
 ## Assets
 

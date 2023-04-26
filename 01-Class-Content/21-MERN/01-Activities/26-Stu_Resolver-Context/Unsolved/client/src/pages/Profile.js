@@ -4,6 +4,9 @@ import { useQuery } from '@apollo/client';
 
 import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
+// this should be changed to QUERY_USER
+// as follows:
+// import { QUERY_USER, QUERY_ME_BASIC } from '../utils/queries';
 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
