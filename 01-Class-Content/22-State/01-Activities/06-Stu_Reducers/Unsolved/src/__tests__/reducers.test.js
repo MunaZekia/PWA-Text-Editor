@@ -8,6 +8,7 @@ const initialState = {
       id: 1,
       name: 'Test Student 1',
       major: 'Major 1',
+
     },
     {
       id: 2,
