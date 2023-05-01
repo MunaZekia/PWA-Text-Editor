@@ -56,7 +56,7 @@ export default function StudentList() {
                           ✖️
                         </span>
                       </button>
-                    </td>
+                    </td> 
                   </tr>
                 ))}
               </tbody>

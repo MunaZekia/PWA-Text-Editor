@@ -32,6 +32,8 @@ The profile page displays a message informing the user that they must be logged 
 5. Navigate to <localhost:3000/me>.
 
 6. The app doesn't display the thoughts from this user.
+// the bug is in the me.js file located in the client/src/pages/Me.js folder. query me is on line 8 and should be query single user.
+. The query is not correct. It should be QUERY_ME not QUERY_SINGLE_USER
 
 ## Assets
 
