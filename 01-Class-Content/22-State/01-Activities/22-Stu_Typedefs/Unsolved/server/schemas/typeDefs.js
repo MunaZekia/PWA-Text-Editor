@@ -1,6 +1,22 @@
 const { gql } = require('apollo-server-express');
 
 // TODO: Create type definitions for `Category`, `Product`, `Order` and `User` above the `Auth` type
+//code goes as follows: 
+const typeDefs = gql`
+type Category {
+  _id: ID
+  name: String!
+}
+type Product {
+  _id: ID
+  name: String!
+  description: String!
+  image: String
+  category: Category
+  price: Float!
+  quantity: Int!
+  }
+
 const typeDefs = gql`
   type Auth {
     token: ID

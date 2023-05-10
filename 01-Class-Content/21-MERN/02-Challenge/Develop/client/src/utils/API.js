@@ -1,6 +1,7 @@
-// route to get logged in user's info (needs the token)
+const baseurl = 'http://localhost:3001'
 export const getMe = (token) => {
-  return fetch('/api/users/me', {
+
+  return fetch(baseurl+'/api/users/me', {
     headers: {
       'Content-Type': 'application/json',
       authorization: `Bearer ${token}`,
@@ -19,7 +20,7 @@ export const createUser = (userData) => {
 };
 
 export const loginUser = (userData) => {
-  return fetch('/api/users/login', {
+  return fetch(baseurl+'/api/users/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

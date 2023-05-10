@@ -5,8 +5,11 @@ Work with a partner to add comments describing the functionality of the code fou
 ## 📝 Notes
 
 What information does the front end need to reference a checkout session?
+// The session ID because it is a unique identifier for the session
 
 Which packages do we need to import at the top of the file?
+// import { loadStripe } from '@stripe/stripe-js';
+// because we need to load the stripe library
 
 Refer to the documentation:
 
