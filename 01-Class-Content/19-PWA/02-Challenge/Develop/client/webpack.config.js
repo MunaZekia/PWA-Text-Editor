@@ -22,11 +22,35 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Progressive',
+        title: 'Progressive', // Jate Text Editor
       }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: 'Progressive',// 'JUST ANOTHER TEXT EDITOR'
+        short_name: 'Progressive',//  'JATE'
+        description: 'A simple text editor that saves your work.',
+        background_color: '#01579b', //need to change color
+        theme_color: '#ffffff',//need to change color
+        start_url: '/',// not sure if i need .
+        icons: [
+          {
+            src: path.resolve('src/images/icons/icon-512x512.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            // this is the size of the icon
+            destination: path.join('assets', 'icons'),
+          },
+        ],
+
+      }),
+
     ],
-    experiments: {
-      topLevelAwait: true,
+    experiments: { // we need this to enable top level await in webpack
+      topLevelAwait: true,// not sure if this is needed
     },
 
     module: {
@@ -38,6 +62,7 @@ module.exports = () => {
         {
           test:/\.js$/,
           // /\.js$/ matches all files ending in .js
+          // ??????
           exclude: /node_modules/,
 
           use: {
@@ -46,6 +71,8 @@ module.exports = () => {
               presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-class-properties',
               '@babel/plugin-transform-runtime'],
+              // this is needed to enable top level await in webpack
+              // ??????
             }
           }
         }

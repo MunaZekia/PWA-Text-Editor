@@ -10,6 +10,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 });
 
+
 // TODO: Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async () => {
     const promptEvent = window.deferredPrompt;
@@ -18,6 +19,7 @@ butInstall.addEventListener('click', async () => {
         return;
     }
     promptEvent.prompt();
+    // we are prompting the user to install the PWA
     window.deferredPrompt = null;
     butInstall.classList.toggle('hidden', true);
     // we are going to hide the button
